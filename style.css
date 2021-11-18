@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Monument Extended';
+    src: url('MonumentExtended-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Monument Extended';
+    color: white;
+}
+body{
+    background-image: url(images/bg\ with\ shoe\ edited\ in\ photoshop.png);
+    background-position: center end;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 110vh;
+    position: relative;
+}
+
+.flex{
+    display: flex;
+}
+.inspiration p{
+    font-family: 'Roboto', sans-serif;
+}
+/* navbar */
+header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.5rem 0;
+    height: 90px;
+}
+.navbar ul{
+    column-gap: 1.5rem;
+    list-style: none;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    letter-spacing: 0.465em;
+}
+.logos{
+    transform: translateY(-15px);
+}
+.logos img:nth-child(1){
+    margin-right: 2.5rem;
+}
+.user__details{
+    position: relative;
+    align-items: center;
+    column-gap: 1.7rem;
+}
+.user__details > *{
+    z-index: 99;
+}
+
+/* navbar */
+
+/* hero content */
+.wrapper{
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.product__details{
+    position: absolute;
+    left: 55%;
+    right: 55%;
+    margin: 0 auto;
+    align-items: flex-end;
+    transform: translateY(420px);
+}
+.menu{
+    position: absolute;
+    right: 2.5rem;
+    transform: translateY(280px);
+}
+.price{
+    color: #E70000;
+    font-size: 36px;
+}
+.details{
+    font-size: 18px;
+    line-height: 20px;
+    /* or 113% */
+    
+    letter-spacing: 0.075em;
+    min-width: 20ch;
+    text-transform: uppercase;
+}
+
+/* footer */
+
+footer{
+    position: absolute;
+    bottom: 3rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer > *{
+    flex: 1;
+}
+.colors{
+    flex-direction: column;
+    margin-left: 5.063rem;
+    position: relative;
+}
+.colors figure{
+    display: flex;
+    position: absolute;
+}
+
+.colors figure img{
+    padding: 1rem 0;
+    transform: translateX(-65px);
+}
+.btns{
+    transform: translateY(40px);
+}
+button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1.2rem 1.7rem;
+    margin: 0 .4rem ;
+    text-transform: uppercase;
+}
+button:nth-child(1){
+    background-color: white;
+    color: #121212;
+}
+.inspiration{
+    transform: translateY(1rem);
+}
+.inspiration h1{
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 1.5rem;
+}
+.inspiration p{
+
+    padding-right: 2.5rem;
+    line-height: 20px;
+}
